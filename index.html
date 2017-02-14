@@ -4,16 +4,34 @@
 <html lang="ru">
 
 <head>
-    <title>Академія Евритмії України</title>
+    <link rel="shortcut icon" href="image/favicon.png">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Академія Евритмії України</title>
+
+    <script>
+        // Mobile Check
+        var ua = navigator.userAgent.toLowerCase(),
+            types = ['iphone', 'ipod', 'android', 'blackberry', 'samsung', 'nokia', 'windows ce', 'sonyericsson', 'webos', 'wap', 'motor', 'symbian', 'symbianos'],
+            found = false;
+
+        var isMobileSafari = ua.indexOf('mobile') > -1;
+
+        for (var i=0; i < types.length; i++) {
+            if (ua.indexOf(types[i]) != -1 && isMobileSafari) {
+                document.location = 'http://mobile.html';
+            }
+        };
+    </script>
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="shortcut icon" href="image/favicon.png">
+
     <meta name="author" content="Ігор Шульга">
     <meta name="description" content="Leben in der Liebe zum Handeln und Lebenlassen im Verständnisse des fremden Wollens ist die Grundmaxime der freien Menschen.">
     <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
 </head>
 
 <body>

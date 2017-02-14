@@ -1,0 +1,215 @@
+body {
+    font-family: 'Marck Script', cursive;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background:#f5f5f5;
+}
+
+div, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.video embed,
+.video object,
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    position: relative;
+    width: 960px;
+    padding: 0 0;
+    max-width: 980px;
+    margin: 0 0;
+}
+
+#content .logo {
+    position: absolute;
+    width: 500px;
+    left: 400px;
+    top: 40px;
+    padding: 10px 20px;
+    background: rgba(0, 170, 238, 0.05);
+    opacity: 0.7;
+    z-index: -100;
+}
+
+#content .name {
+    position: absolute;
+    left: 50px;
+    top: 280px;
+    width: 800px;
+    height: auto;
+    padding: 0 30px;
+    font-size: 1.8em;
+    background: rgba(106, 0, 255, 0.1);
+    z-index: 101;
+}
+.name h1{color: #21339c;}
+
+#content .slogan {
+    position: absolute;
+    left: 820px;
+    top: 10px;
+    width: 257px;
+    height: auto;
+    padding: 0 15px 0 5px;
+    font-size: 1.1em;
+    background: rgba(200, 117, 4, 0.1);
+    z-index: 90;
+}
+.slogan h2{
+    color: #21339c;
+}
+#content .credo {
+    position: absolute;
+    left: 560px;
+    top: 580px;
+    width: 470px;;
+    height: auto;
+    padding: 0 20px 0 20px;
+    font-size: 1em;
+    background: rgba(200, 39, 68, 0.1);
+    z-index: 90;
+}
+.credo h3{
+    color: #21339c;
+}
+#content .social-networks {
+    position: absolute;
+    left: -70px;
+    top: 430px;
+    width: 270px;
+    height: 200px;
+    padding: 10px;
+    /*background: rgba(143, 200, 19, 0.5);*/
+    z-index: 100;
+}
+#content .lang {
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 120px;
+    height: 220px;
+    padding: 10px;
+    /*background: rgb(136, 255, 242);*/
+    z-index: 100;
+}
+
+#content .social-networks a.button-fb, a.button-vk, a.button-go, a.button-yu {
+    position: absolute;
+    width: 100px;
+    font-family:"DejaVu Sans Mono";
+    color: #21339c; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(255, 122, 114); /* фон кнопки */
+    padding: 8px 8px; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    text-align: center;
+}
+
+#content .lang a.lang-ua, a.lang-de, a.lang-ru, a.lang-en {
+    position: absolute;
+    width: 120px;
+    font-family:"DejaVu Sans Mono";
+    color: #21339c; /* Цвет ссылки */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(184, 201, 255); /* Цвет фона */
+    padding: 10px 10px; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    text-align: center; /* Выравнивание по центру */
+}
+
+#content .social-networks a.button-fb:hover, a.button-vk:hover, a.button-go:hover, a.button-yu:hover {
+    color: #fff;} /* при наведении курсора мышки */
+
+#content .social-networks a.button-fb:active, a.button-vk:active, a.button-go:active, a.button-yu:active {
+    color: #fff;
+    background: rgb(232, 54, 0);} /* при нажатии */
+
+a.button-fb {left: 10px;top: 10px;}
+a.button-vk {left: 60px;top: 65px;}
+a.button-go {left: 110px;top: 120px;}
+a.button-yu {left: 160px;top: 175px;}
+
+a.lang-ua {left: 0px;top: 10px;}
+a.lang-de {left: 0px;top: 70px;}
+a.lang-ru {left: 0px;top: 130px;}
+a.lang-en {left: 0px;top: 190px;}
+
+#content .lang a.lang-ua:hover, a.lang-de:hover, a.lang-ru:hover, a.lang-en:hover {
+    color: #fff;} /* при наведении курсора мышки */
+
+#content a.lang-ua:active, a.lang-de:active, a.lang-ru:active, a.lang-en:active {
+    color: #fff;
+    background: rgb(232, 54, 0);} /* при нажатии */
+
+#pagewrap {
+    width: 980px;
+    margin: 0 auto;
+}
+#header {
+    height: 160px;
+}
+#content {
+    width: 980px;
+    float: left;
+}
+#footer {
+    clear: both;
+}
+
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 95%;
+    }
+    #content {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #header {
+        height: auto;
+    }
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+    #main-nav {
+        position: static;
+    }
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    #main-nav a {
+        font-size: 90%;
+        padding: 10px 8px;
+    }
+}
